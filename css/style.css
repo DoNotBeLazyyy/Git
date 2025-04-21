@@ -1,4 +1,6 @@
 /* header styling */
+
+
 .header {
   width: 100%;
   max-width: 100%;
@@ -12,6 +14,10 @@
   font-size: var(--desktop-text);
 }
 
+.active-link {
+  color: var(--accent-color);
+}
+ 
 .main-navbar {
   width: 100%;
   max-width: 100%;
