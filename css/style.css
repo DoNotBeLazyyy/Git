@@ -14,9 +14,7 @@
   font-size: var(--desktop-text);
 }
 
-.active-page {
-  color: var(--accent-color) !important;
-}
+
  
 .main-navbar {
   width: 100%;
@@ -338,4 +336,6 @@
     align-items: center;
     justify-items: center;
   }
-
+.active-page {
+  color: var(--accent-color) !important;
+}
