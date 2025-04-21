@@ -1,0 +1,335 @@
+/* header styling */
+.header {
+  width: 100%;
+  max-width: 100%;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  display: grid;
+  justify-content: center;
+  background-color: var(--background-color);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  font-size: var(--desktop-text);
+}
+
+.main-navbar {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  align-content: center;
+}
+
+.main-menu {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-content: center;
+  column-gap: var(--column-spacing);
+}
+
+.main-menu li a {
+  transition: color 250ms;
+}
+
+.main-menu li a:hover {
+  color: var(--accent-color);
+}
+
+/* header styling end */
+
+/* main styling start */
+.main-content {
+  width: 100%;
+  padding: var(--column-spacing);
+  display: grid;
+  grid-row-gap: var(--row-spacing);
+}
+
+  /* about styling start */
+  .about {
+    display: grid;
+    grid-template-areas: 
+      'picture description'
+      'social cta-buttons';
+    grid-row-gap: var(--column-spacing);
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+  }
+  
+  .about-title {
+    color: var(--primary-color);
+  }
+
+  .title-highlight {
+    color: var(--accent-color);
+  }
+  
+  .profile-picture {
+    grid-area: picture;
+    max-width: 18rem;
+  }
+  
+  .profile-description {
+    grid-area: description;
+    max-width: 45rem;
+    text-align: justify;
+  }
+  
+  .social-container {
+    grid-area: social;
+    width: 20rem;
+  }
+
+  .social-menu {
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    justify-content: space-around;
+  }
+  
+  .social-menu li a i {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    grid-area: cta-buttons;
+    font-size: var(--desktop-text);
+    justify-self: start;
+    column-gap: var(--small-column-spacing);
+  }
+  
+  .cta-buttons a {
+    padding: var(--button-padding);
+  }
+  /* about styling end */
+
+  /* skill styling start */
+  .skill {
+    display: grid;
+    grid-row-gap: var(--row-spacing);
+    justify-content: center;
+  }
+
+  .skill-lists {
+    display: flex;
+    text-align: center;
+    column-gap: var(--column-spacing);
+  } 
+
+  .skill-lists li {
+    display: grid;
+    border: 2px solid var(--accent-color);
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+  }
+
+  .skill-lists li i {
+    align-self: end;
+    font-size: var(--icon);
+    color: var(--primary-color)
+  }
+
+  .try {
+    display: none;
+  }
+
+  .hi:hover .try {
+    display: inline-block;
+  }
+
+  /* service styling start*/
+  .service {
+    display: grid;
+    grid-row-gap: var(--row-spacing);
+  }
+  
+  .service-lists {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    column-gap: var(--small-column-spacing);
+  }
+
+  .service-entry {
+    flex: 1;
+    display: grid;
+    row-gap: var(--small-row-spacing);
+    text-align: center;
+    justify-items: center;
+  }
+
+  .service-entry dt {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .service-entry dt i {
+    display: grid;
+    color: var(--primary-color);
+    font-size: var(--large-icon);
+    margin-bottom: var(--small-row-spacing);
+    background-color: var(--accent-color);
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    justify-self: center;
+    align-items: center;
+  }
+
+  .service-entry dd {
+    width: 60%;
+  }
+
+  /* project styling start */
+  .project {
+    display: grid;
+    grid-row-gap: var(--row-spacing);
+  }  
+
+  .project-lists {
+    display: grid;
+    grid-row-gap: var(--row-spacing);
+    justify-content: center;
+  }
+
+  .project-entry {
+    display: grid;
+    grid-template-areas: 
+      'image title'
+      'image description';
+    justify-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    grid-column-gap: var(--column-spacing);
+    background-color: var(--secondary-color);
+    padding: 0 1rem 0 0;
+  }
+
+  .reverse {
+    grid-template-areas:
+      'title image'
+      'description image';  
+    padding: 0 0 0 1rem;
+  }
+
+  .project-entry img {
+    grid-area: image;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    justify-self: stretch;
+  }
+  
+  .reverse img {
+    justify-self: end;
+  }
+
+  .project-entry h2 {
+    grid-area: title;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  .project-entry figcaption {
+    width: 30rem;
+    grid-area: description;
+    text-align: justify;
+  }
+
+  /* contact syling start */
+  .contact {
+    display: grid;
+    grid-template-areas: 
+      'contact form';
+    grid-row-gap: var(--row-spacing);
+    justify-content: space-evenly;
+  }
+
+  .contact-form {
+    grid-area: form;
+    display: grid;
+    grid-template-areas: 
+      'first-name last-name'
+      'message-type message-type'
+      'email email'
+      'message message'
+      'submit submit';
+    grid-row-gap: var(--small-row-spacing);
+    grid-column-gap: var(--small-column-spacing);
+  }
+
+  .contact-form *{
+    height: 2.5rem;
+  }
+
+  .first-name {
+    grid-area: first-name;
+  }
+
+  .last-name {
+    grid-area: last-name;
+  }
+
+  .subject {
+    grid-area: message-type;
+  }
+
+  .email {
+    grid-area: email;
+  }
+
+  .message {
+    grid-area: message;
+    min-height: 12rem;
+    font-family: sans-serif;
+    padding: 0.5rem;
+    resize: vertical;
+    font-family: "Merriweather", serif;
+  }
+
+  .submit-button {
+    grid-area: submit;
+    height: auto;
+    padding: var(--button-padding);
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: relative;
+    transition: 
+      background-color 250ms, 
+      color 250ms;
+  }
+    
+
+  .contact-container {
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: var(--small-row-spacing);
+    width: 30rem;
+  }
+
+  .contact-info {
+    display: grid;
+    grid-row-gap: var(--small-row-spacing);
+  }
+
+  .contact-social-menu {
+    display: flex;
+    column-gap: var(--small-column-spacing);
+  }
+
+  .contact-social-menu i {
+    font-size: 2rem;
+  }
+
+  .contact-social-menu li a i {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+

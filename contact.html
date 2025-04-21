@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Bro Bro">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="header">
+    <navbar class="main-navbar">
+      <ul class="main-menu">
+        <li><a href="index.html">About</a></li>
+        <li><a href="skill.html">Skill</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="contact.html">Get in Touch</a></li>
+      </ul>
+    </navbar>
+  </header>
+  <main class="main-content" id="main-content">
+    <h1 class="contact-title">Contact</h1>
+    <section id="contact" class="contact">
+      <form action="https://formspree.io/f/xbldkovd" method="POST" class="contact-form">
+        <input type="text" class="first-name" name="first-name" placeholder="Enter your first name" required>
+        <input type="text" class="last-name" name="last-name" placeholder="Enter your last name" required>
+        <select name="subject" id="subject" name="subject" class="subject" required>
+          <option selected disabled>Choose option</option>
+        </select>
+        <input type="email" class="email" name="email" placeholder="Enter your email" required>
+        <textarea name="message" id="message" class="message" placeholder="Tell me how I can help you!" required></textarea>
+        <input type="submit" class="submit-button button-hover" value="Send Message">
+      </form>
+      <div class="contact-container">
+        <ul class="contact-info">
+          <li>
+            <p>Phone: 09123456789</p>
+          </li>
+          <li>
+            <p>Email: Juliustolentino.diamond@gmail.com</p>
+          </li>
+        </ul>
+        <nav>
+          <ul class="contact-social-menu">
+            <li><a href="https://x.com/"><i class="fa-brands fa-twitter nav-icon"></i></a></li>
+            <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin nav-icon"></i></a></li>
+            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook nav-icon"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram nav-icon"></i></a></li>
+            <li><a href="https://github.com/" ><i class="fa-brands fa-github nav-icon"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
